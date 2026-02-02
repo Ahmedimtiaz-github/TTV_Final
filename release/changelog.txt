@@ -1,0 +1,84 @@
+TTV Pipeline - Changelog
+========================
+
+This changelog lists all files created and modified for the TTV pipeline implementation.
+
+BRANCH NAMES USED:
+- feature/parser
+- feature/visual-gen
+- feature/audio-devops
+- feature/integration
+
+NEW FILES CREATED:
+==================
+
+Source Code:
+------------
+src/pipeline/parser.py                    - Script parser implementation
+src/pipeline/visual_gen.py                - Visual frame generation with PIL fallback
+src/pipeline/audio_synth.py                - Audio synthesis with offline TTS
+src/pipeline/__init__.py                   - Pipeline package init
+src/parser.py                             - Parser CLI entry point
+src/cli.py                                 - Full pipeline CLI orchestrator
+
+Tests:
+------
+tests/test_parser.py                      - Parser unit tests
+tests/test_visual_gen.py                   - Visual generation unit tests
+tests/test_audio.py                        - Audio synthesis unit tests
+
+Documentation:
+-------------
+docs/scene-schema.md                      - Scene JSON schema documentation
+docs/setup.md                             - Setup guide (Windows & Linux)
+docs/architecture.md                      - Pipeline architecture overview
+CONTRIBUTING.md                           - Contribution guidelines
+
+DevOps:
+-------
+docker/Dockerfile                          - Docker containerization
+infra/docker-compose.yml                   - Docker Compose configuration
+.github/workflows/ci.yml                  - CI/CD workflow
+
+Assets:
+------
+assets/visual_templates/README.md         - Visual templates directory
+
+Data:
+-----
+data/sample_scripts/demo.json             - Example scenes.json output
+
+MODIFIED FILES:
+===============
+
+Source Code:
+------------
+src/api.py                                - Updated for full pipeline support
+run_demo.py                               - Updated to use new pipeline orchestrator
+src/pipeline/audio_synth.py              - Fixed audioop import for Python 3.13+ compatibility
+
+Tests:
+------
+tests/test_end_to_end.py                  - Enhanced integration tests, fixed Windows temp path issues
+tests/conftest.py                         - Added to fix src import path for pytest
+
+Configuration:
+-------------
+pytest.ini                                - Added pytest configuration
+.gitignore                                - Updated to exclude pytest temp dirs and venv
+.gitattributes                            - Added for consistent line endings
+LICENSE                                   - Added MIT license
+
+Documentation:
+-------------
+README.md                                 - Comprehensive documentation update
+requirements.txt                          - Updated dependencies (added numpy)
+
+RELEASE PACKAGE CONTENTS:
+=========================
+- integration-report.md                    - Integration report
+- changelog.txt                            - This file
+- All source code files listed above
+- All test files listed above
+- All documentation files listed above
+- Docker and CI configuration files

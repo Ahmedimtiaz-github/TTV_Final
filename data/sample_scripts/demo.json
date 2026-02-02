@@ -1,0 +1,22 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_01",
+      "description": "A quiet street in the morning. Camera pans right.",
+      "characters": [],
+      "dialogue": [],
+      "visual_prompts": [
+        "A quiet street in the morning. Camera pans right."
+      ]
+    },
+    {
+      "scene_id": "scene_02",
+      "description": "Two friends meet and talk about a project.",
+      "characters": [],
+      "dialogue": [],
+      "visual_prompts": [
+        "Two friends meet and talk about a project."
+      ]
+    }
+  ]
+}

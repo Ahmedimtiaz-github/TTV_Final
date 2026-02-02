@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ttv:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../data:/app/data
+      - ../output:/app/output
+    working_dir: /app
+    command: python run_demo.py --demo --out /app/output/demo_output.mp4
+    environment:
+      - PYTHONPATH=/app

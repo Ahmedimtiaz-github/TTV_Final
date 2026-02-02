@@ -1,0 +1,5 @@
+﻿Scene 1: Exterior - Day
+Narration: A quiet street in the morning. Camera pans right.
+
+Scene 2: Interior - Cafe
+Narration: Two friends meet and talk about a project.
