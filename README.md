@@ -159,36 +159,6 @@ docker-compose up
 ### System Dependencies
 - `ffmpeg` - Video encoding (see [docs/setup.md](docs/setup.md))
 
-## Features by Component
-
-### Member B - Parser & Data Schema
-- ✅ Script parsing with scene detection
-- ✅ Dialogue and narration extraction
-- ✅ Visual prompt extraction
-- ✅ Duration hint support
-- ✅ CLI interface: `python -m src.parser`
-- ✅ Unit tests with edge cases
-
-### Member C - Visual Generation
-- ✅ PIL-based fallback renderer
-- ✅ Frame generation per scene
-- ✅ Caching for identical prompts
-- ✅ Deterministic output
-- ✅ Unit tests
-
-### Member D - Audio/TTS & DevOps
-- ✅ Offline TTS (pyttsx3)
-- ✅ Audio normalization
-- ✅ Docker support
-- ✅ CI/CD workflow
-- ✅ Unit tests
-
-### Integration
-- ✅ Full pipeline orchestration
-- ✅ CLI entry point
-- ✅ End-to-end tests
-- ✅ Demo runner
-
 ## Limitations
 
 - Visual generation uses simple PIL-based placeholders (not AI-generated images)
